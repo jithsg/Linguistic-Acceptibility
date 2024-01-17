@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mlops-project-0"
+version = "0.1.0"
+description = ""
+authors = ["Jithish J <135303624+jithsg@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "mlops_project_0"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scikit-learn = "^1.3.2"
+transformers = "^4.36.2"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.0"
+datasets = "^2.16.1"
+pytorch-lightning = "^2.1.3"
+ipython = "^8.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
