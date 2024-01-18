@@ -1,0 +1,55 @@
+
+
+Map: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 8551/8551 [00:03<00:00, 2829.99 examples/s]
+Map: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 1043/1043 [00:00<00:00, 2742.21 examples/s]
+  | Name                   | Type                          | Params
+-------------------------------------------------------------------------
+0 | bert                   | BertForSequenceClassification | 4.4 M
+1 | train_accuracy_metric  | BinaryAccuracy                | 0
+2 | val_accuracy_metric    | BinaryAccuracy                | 0
+3 | f1_metric              | BinaryF1Score                 | 0
+4 | precision_macro_metric | BinaryPrecision               | 0
+5 | recall_macro_metric    | BinaryRecall                  | 0
+6 | precision_micro_metric | BinaryPrecision               | 0
+7 | recall_micro_metric    | BinaryRecall                  | 0
+-------------------------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=11` in the `DataLoader` to improve performance.
+/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/utilities/data.py:77: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 64. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+Traceback (most recent call last):
+  File "/home/jithish/Documents/mlops_project_0/week_1/train.py", line 69, in <module>
+    main()
+  File "/home/jithish/Documents/mlops_project_0/week_1/train.py", line 65, in main
+    trainer.fit(cola_model, cola_data)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 989, in _run
+    results = self._run_stage()
+              ^^^^^^^^^^^^^^^^^
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 1033, in _run_stage
+    self._run_sanity_check()
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 1062, in _run_sanity_check
+    val_loop.run()
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/loops/utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 141, in run
+    return self.on_run_end()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 253, in on_run_end
+    self._on_evaluation_epoch_end()
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 329, in _on_evaluation_epoch_end
+    call._call_lightning_module_hook(trainer, hook_name)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/call.py", line 157, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+TypeError: ColaModel.on_validation_epoch_end() missing 1 required positional argument: 'outputs'
+Sanity Checking DataLoader 0: 100%|█████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  2.47it/s]

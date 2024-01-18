@@ -1,0 +1,45 @@
+  | Name                   | Type                          | Params
+-------------------------------------------------------------------------
+0 | bert                   | BertForSequenceClassification | 4.4 M
+1 | train_accuracy_metric  | Accuracy                      | 0
+2 | val_accuracy_metric    | Accuracy                      | 0
+3 | f1_metric              | F1                            | 0
+4 | precision_macro_metric | Precision                     | 0
+5 | recall_macro_metric    | Recall                        | 0
+6 | precision_micro_metric | Precision                     | 0
+7 | recall_micro_metric    | Recall                        | 0
+-------------------------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/utilities/distributed.py:68: UserWarning: The dataloader, val dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  warnings.warn(*args, **kwargs)
+Traceback (most recent call last):
+  File "/home/jithish/Documents/mlops_project_0/week_1/train.py", line 69, in <module>
+    main()
+  File "/home/jithish/Documents/mlops_project_0/week_1/train.py", line 65, in main
+    trainer.fit(cola_model, cola_data)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 499, in fit
+    self.dispatch()
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 546, in dispatch
+    self.accelerator.start_training(self)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/accelerators/accelerator.py", line 73, in start_training
+    self.training_type_plugin.start_training(trainer)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/plugins/training_type/training_type_plugin.py", line 114, in start_training
+    self._results = trainer.run_train()
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 607, in run_train
+    self.run_sanity_check(self.lightning_module)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 864, in run_sanity_check
+    _, eval_results = self.run_evaluation(max_batches=self.num_sanity_val_batches)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 745, in run_evaluation
+    self.evaluation_loop.on_evaluation_epoch_end()
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/evaluation_loop.py", line 325, in on_evaluation_epoch_end
+    self.trainer.call_hook('on_validation_epoch_end', *args, **kwargs)
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 1102, in call_hook
+    output = hook_fx(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ColaModel.on_validation_epoch_end() missing 1 required positional argument: 'outputs'
+Validation sanity check: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  3.46it/s]

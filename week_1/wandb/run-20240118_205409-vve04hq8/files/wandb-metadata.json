@@ -1,0 +1,100 @@
+{
+    "os": "Linux-6.5.0-14-generic-x86_64-with-glibc2.35",
+    "python": "3.11.7",
+    "heartbeatAt": "2024-01-18T12:54:12.211452",
+    "startedAt": "2024-01-18T12:54:09.934690",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/jithish/Documents/mlops_project_0/week_1/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "week_1/train.py",
+    "git": {
+        "remote": "https://github.com/jithsg/MLOps-Project.git",
+        "commit": "4023519ce799a34108fd9c7d6e2a9ef2caa37605"
+    },
+    "email": "135303624+jithsg@users.noreply.github.com",
+    "root": "/home/jithish/Documents/mlops_project_0",
+    "host": "jithish-ThinkPad-P53",
+    "username": "jithish",
+    "executable": "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 799.9680833333333,
+        "min": 800.0,
+        "max": 4600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 799.996,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.004,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.003,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.005,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.002,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.006,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.004,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 800.005,
+            "min": 800.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 218.50913619995117,
+            "used": 147.03145599365234
+        }
+    },
+    "memory": {
+        "total": 46.84972381591797
+    }
+}
