@@ -1,0 +1,28 @@
+2024-01-19 19:00:40,479 INFO    MainThread:17749 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-01-19 19:00:40,479 INFO    MainThread:17749 [wandb_setup.py:_flush():76] Configure stats pid to 17749
+2024-01-19 19:00:40,479 INFO    MainThread:17749 [wandb_setup.py:_flush():76] Loading settings from /home/jithish/.config/wandb/settings
+2024-01-19 19:00:40,479 INFO    MainThread:17749 [wandb_setup.py:_flush():76] Loading settings from /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-00-27/wandb/settings
+2024-01-19 19:00:40,479 INFO    MainThread:17749 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-01-19 19:00:40,480 INFO    MainThread:17749 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-19 19:00:40,480 INFO    MainThread:17749 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'week_2/train.py', 'program_abspath': '/home/jithish/Documents/mlops_project_0/week_2/train.py', 'program': '/home/jithish/Documents/mlops_project_0/week_2/train.py'}
+2024-01-19 19:00:40,480 INFO    MainThread:17749 [wandb_init.py:_log_setup():526] Logging user logs to /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-00-27/wandb/run-20240119_190040-q5hq08un/logs/debug.log
+2024-01-19 19:00:40,480 INFO    MainThread:17749 [wandb_init.py:_log_setup():527] Logging internal logs to /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-00-27/wandb/run-20240119_190040-q5hq08un/logs/debug-internal.log
+2024-01-19 19:00:40,480 INFO    MainThread:17749 [wandb_init.py:init():566] calling init triggers
+2024-01-19 19:00:40,481 INFO    MainThread:17749 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-01-19 19:00:40,481 INFO    MainThread:17749 [wandb_init.py:init():616] starting backend
+2024-01-19 19:00:40,481 INFO    MainThread:17749 [wandb_init.py:init():620] setting up manager
+2024-01-19 19:00:40,493 INFO    MainThread:17749 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-01-19 19:00:40,496 INFO    MainThread:17749 [wandb_init.py:init():628] backend started and connected
+2024-01-19 19:00:40,512 INFO    MainThread:17749 [wandb_init.py:init():720] updated telemetry
+2024-01-19 19:00:40,517 INFO    MainThread:17749 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-01-19 19:00:41,333 ERROR   MainThread:17749 [wandb_init.py:init():779] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-01-19 19:00:41,521 ERROR   MainThread:17749 [wandb_init.py:init():1194] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+Traceback (most recent call last):
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2024-01-19 19:00:42,722 WARNING MsgRouterThr:17749 [router.py:message_loop():77] message_loop has been closed

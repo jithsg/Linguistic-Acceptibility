@@ -1,0 +1,328 @@
+2024-01-19 19:01:49,931 INFO    StreamThr :21646 [internal.py:wandb_internal():86] W&B internal server running at pid: 21646, started at: 2024-01-19 19:01:49.930754
+2024-01-19 19:01:49,931 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: status
+2024-01-19 19:01:49,935 INFO    WriterThread:21646 [datastore.py:open_for_write():87] open: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/run-dlmsy4o0.wandb
+2024-01-19 19:01:49,935 DEBUG   SenderThread:21646 [sender.py:send():382] send: header
+2024-01-19 19:01:49,938 DEBUG   SenderThread:21646 [sender.py:send():382] send: run
+2024-01-19 19:01:49,941 INFO    SenderThread:21646 [sender.py:_maybe_setup_resume():763] checking resume status for jithishj/MLOps/dlmsy4o0
+2024-01-19 19:01:50,836 INFO    SenderThread:21646 [dir_watcher.py:__init__():211] watching files in: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files
+2024-01-19 19:01:50,836 INFO    SenderThread:21646 [sender.py:_start_run_threads():1136] run started: dlmsy4o0 with start time 1705662109.930698
+2024-01-19 19:01:50,838 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: check_version
+2024-01-19 19:01:50,839 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: check_version
+2024-01-19 19:01:50,956 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: run_start
+2024-01-19 19:01:50,970 ERROR   HandlerThread:21646 [gpu.py:is_available():381] Error initializing NVML: RM has detected an NVML/RM version mismatch.
+2024-01-19 19:01:50,971 DEBUG   HandlerThread:21646 [system_info.py:__init__():27] System info init
+2024-01-19 19:01:50,972 DEBUG   HandlerThread:21646 [system_info.py:__init__():42] System info init done
+2024-01-19 19:01:50,972 INFO    HandlerThread:21646 [system_monitor.py:start():194] Starting system monitor
+2024-01-19 19:01:50,972 INFO    SystemMonitor:21646 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-19 19:01:50,975 INFO    HandlerThread:21646 [system_monitor.py:probe():214] Collecting system info
+2024-01-19 19:01:50,975 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started cpu monitoring
+2024-01-19 19:01:50,979 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started disk monitoring
+2024-01-19 19:01:50,980 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started memory monitoring
+2024-01-19 19:01:50,981 INFO    SystemMonitor:21646 [interfaces.py:start():190] Started network monitoring
+2024-01-19 19:01:51,012 DEBUG   HandlerThread:21646 [system_info.py:probe():151] Probing system
+2024-01-19 19:01:51,018 DEBUG   HandlerThread:21646 [system_info.py:_probe_git():136] Probing git
+2024-01-19 19:01:51,033 DEBUG   HandlerThread:21646 [system_info.py:_probe_git():144] Probing git done
+2024-01-19 19:01:51,033 DEBUG   HandlerThread:21646 [system_info.py:probe():199] Probing system done
+2024-01-19 19:01:51,033 DEBUG   HandlerThread:21646 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-14-generic-x86_64-with-glibc2.35', 'python': '3.11.7', 'heartbeatAt': '2024-01-19T11:01:51.012731', 'startedAt': '2024-01-19T11:01:49.926032', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/jithish/Documents/mlops_project_0/week_2/train.py', 'codePathLocal': None, 'codePath': 'week_2/train.py', 'git': {'remote': 'https://github.com/jithsg/MLOps-Project.git', 'commit': 'fce459a6119c53a3e78136d1b0ed73b8b8e1d17b'}, 'email': '135303624+jithsg@users.noreply.github.com', 'root': '/home/jithish/Documents/mlops_project_0', 'host': 'jithish-ThinkPad-P53', 'username': 'jithish', 'executable': '/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 800.0603333333333, 'min': 800.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 4600.0}, {'current': 800.2, 'min': 800.0, 'max': 4600.0}, {'current': 800.55, 'min': 800.0, 'max': 4600.0}, {'current': 800.469, 'min': 800.0, 'max': 4600.0}, {'current': 800.143, 'min': 800.0, 'max': 4600.0}, {'current': 800.326, 'min': 800.0, 'max': 4600.0}, {'current': 800.051, 'min': 800.0, 'max': 4600.0}, {'current': 800.0, 'min': 800.0, 'max': 4600.0}, {'current': 800.0, 'min': 800.0, 'max': 4600.0}, {'current': 800.006, 'min': 800.0, 'max': 4600.0}, {'current': 800.001, 'min': 800.0, 'max': 4600.0}, {'current': 799.96, 'min': 800.0, 'max': 4600.0}], 'disk': {'/': {'total': 218.50913619995117, 'used': 146.973388671875}}, 'memory': {'total': 46.849700927734375}}
+2024-01-19 19:01:51,033 INFO    HandlerThread:21646 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-19 19:01:51,033 INFO    HandlerThread:21646 [system_monitor.py:probe():227] Publishing system info
+2024-01-19 19:01:51,033 INFO    HandlerThread:21646 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-19 19:01:51,037 DEBUG   SenderThread:21646 [sender.py:send():382] send: files
+2024-01-19 19:01:51,037 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-19 19:01:51,040 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-19 19:01:51,040 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: python_packages
+2024-01-19 19:01:51,041 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 19:01:51,041 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: stop_status
+2024-01-19 19:01:51,042 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 19:01:51,382 DEBUG   SenderThread:21646 [sender.py:send():382] send: telemetry
+2024-01-19 19:01:51,382 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:51,382 DEBUG   SenderThread:21646 [sender.py:send():382] send: telemetry
+2024-01-19 19:01:51,382 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:51,382 WARNING SenderThread:21646 [sender.py:send_metric():1354] Seen metric with glob (shouldn't happen)
+2024-01-19 19:01:51,382 DEBUG   SenderThread:21646 [sender.py:send():382] send: config
+2024-01-19 19:01:51,383 DEBUG   SenderThread:21646 [sender.py:send():382] send: config
+2024-01-19 19:01:51,616 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-19 19:01:51,616 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: log_artifact
+2024-01-19 19:01:51,842 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-metadata.json
+2024-01-19 19:01:51,842 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log
+2024-01-19 19:01:51,842 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/requirements.txt
+2024-01-19 19:01:51,843 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/conf_table_0_ab88b7d80cc8abe8cf5b.table.json
+2024-01-19 19:01:51,843 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table
+2024-01-19 19:01:51,843 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media
+2024-01-19 19:01:52,000 INFO    wandb-upload_0:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/3jqo25lo-wandb-metadata.json
+2024-01-19 19:01:52,150 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:52,460 INFO    wandb-upload_1:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/ib8onyu0-media/table/conf_table_0_ab88b7d80cc8abe8cf5b.table.json
+2024-01-19 19:01:52,548 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-19 19:01:52,580 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:52,691 INFO    SenderThread:21646 [sender.py:send_request_log_artifact():1470] logged artifact run-dlmsy4o0-conf_table - {'id': 'QXJ0aWZhY3Q6Njk2NDcwNTAz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMTgwNzQ2NQ==', 'latestArtifact': None}}
+2024-01-19 19:01:52,692 DEBUG   SenderThread:21646 [sender.py:send():382] send: files
+2024-01-19 19:01:52,692 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file media/table/conf_table_0_ab88b7d80cc8abe8cf5b.table.json with policy now
+2024-01-19 19:01:52,692 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,692 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:52,693 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:52,693 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:52,694 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: log_artifact
+2024-01-19 19:01:52,838 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:01:52,839 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/examples_1_a5b392a75aaf9b0b8a53.table.json
+2024-01-19 19:01:52,839 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table
+2024-01-19 19:01:53,310 INFO    SenderThread:21646 [sender.py:send_request_log_artifact():1470] logged artifact run-dlmsy4o0-examples - {'id': 'QXJ0aWZhY3Q6Njk2NDcwNTE3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMTgwNzQ2OQ==', 'latestArtifact': None}}
+2024-01-19 19:01:53,310 DEBUG   SenderThread:21646 [sender.py:send():382] send: files
+2024-01-19 19:01:53,310 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file media/table/examples_1_a5b392a75aaf9b0b8a53.table.json with policy now
+2024-01-19 19:01:53,311 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,311 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,311 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,311 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,311 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,312 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,312 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,312 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,312 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:53,312 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:53,312 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:53,315 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:53,371 INFO    wandb-upload_1:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/lugyvby3-media/table/conf_table_0_ab88b7d80cc8abe8cf5b.table.json
+2024-01-19 19:01:53,694 INFO    wandb-upload_2:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/3dg7ku5w-media/table/examples_1_a5b392a75aaf9b0b8a53.table.json
+2024-01-19 19:01:53,838 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:01:53,839 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log
+2024-01-19 19:01:53,961 INFO    wandb-upload_0:21646 [upload_job.py:push():89] Uploaded file /home/jithish/.local/share/wandb/artifacts/staging/tmpej3mva1m
+2024-01-19 19:01:54,353 INFO    wandb-upload_1:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/k6x8is2g-media/table/examples_1_a5b392a75aaf9b0b8a53.table.json
+2024-01-19 19:01:54,377 INFO    wandb-upload_3:21646 [upload_job.py:push():89] Uploaded file /home/jithish/.local/share/wandb/artifacts/staging/tmp5dsnlqrv
+2024-01-19 19:01:54,925 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:54,930 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:54,930 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:54,930 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:54,931 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:54,931 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:54,933 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:54,934 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:01:55,840 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:01:55,840 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log
+2024-01-19 19:01:56,530 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:56,530 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:56,530 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:56,531 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:56,841 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:01:57,842 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log
+2024-01-19 19:01:58,039 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:58,040 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:58,040 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:58,040 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:58,498 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:58,499 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:58,499 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:58,499 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:58,499 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:58,500 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:58,581 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:58,582 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:01:58,582 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:58,582 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:58,582 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:58,644 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:58,645 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:58,645 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:58,645 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:58,708 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:58,709 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:58,709 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:58,709 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:58,766 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:58,767 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:58,767 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:58,768 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:58,782 DEBUG   SenderThread:21646 [sender.py:send():382] send: config
+2024-01-19 19:01:58,842 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:01:59,126 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-19 19:01:59,127 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: log_artifact
+2024-01-19 19:01:59,158 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:59,554 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: log_artifact
+2024-01-19 19:01:59,585 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:59,649 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-19 19:01:59,736 INFO    SenderThread:21646 [sender.py:send_request_log_artifact():1470] logged artifact run-dlmsy4o0-conf_table - {'id': 'QXJ0aWZhY3Q6Njk2NDcwNjQ0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMTgwNzQ2NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njk2NDcwNTAz', 'versionIndex': 0}}}
+2024-01-19 19:01:59,736 DEBUG   SenderThread:21646 [sender.py:send():382] send: files
+2024-01-19 19:01:59,736 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file media/table/conf_table_10_53e8eba8db34a3d4f73a.table.json with policy now
+2024-01-19 19:01:59,738 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:01:59,738 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:01:59,739 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:01:59,740 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: log_artifact
+2024-01-19 19:01:59,844 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:01:59,844 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log
+2024-01-19 19:01:59,845 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/examples_11_91f6e347e7ecd02507aa.table.json
+2024-01-19 19:01:59,845 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/conf_table_10_53e8eba8db34a3d4f73a.table.json
+2024-01-19 19:01:59,846 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table
+2024-01-19 19:02:00,308 INFO    wandb-upload_1:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/nx6rhjfp-media/table/conf_table_10_53e8eba8db34a3d4f73a.table.json
+2024-01-19 19:02:00,385 INFO    SenderThread:21646 [sender.py:send_request_log_artifact():1470] logged artifact run-dlmsy4o0-examples - {'id': 'QXJ0aWZhY3Q6Njk2NDcwNjYy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMTgwNzQ2OQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njk2NDcwNTE3', 'versionIndex': 0}}}
+2024-01-19 19:02:00,385 DEBUG   SenderThread:21646 [sender.py:send():382] send: files
+2024-01-19 19:02:00,385 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file media/table/examples_11_91f6e347e7ecd02507aa.table.json with policy now
+2024-01-19 19:02:00,386 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:02:00,386 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:02:00,386 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:02:00,387 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:02:00,387 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send():382] send: metric
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send():382] send: history
+2024-01-19 19:02:00,388 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: summary_record
+2024-01-19 19:02:00,388 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:02:00,389 DEBUG   SenderThread:21646 [sender.py:send():382] send: telemetry
+2024-01-19 19:02:00,389 DEBUG   SenderThread:21646 [sender.py:send():382] send: exit
+2024-01-19 19:02:00,389 INFO    SenderThread:21646 [sender.py:send_exit():589] handling exit code: 0
+2024-01-19 19:02:00,389 INFO    SenderThread:21646 [sender.py:send_exit():591] handling runtime: 8
+2024-01-19 19:02:00,389 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:02:00,389 INFO    SenderThread:21646 [sender.py:send_exit():597] send defer
+2024-01-19 19:02:00,389 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,389 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-19 19:02:00,389 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,389 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-19 19:02:00,389 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 1
+2024-01-19 19:02:00,389 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,389 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-19 19:02:00,390 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,390 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-19 19:02:00,390 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 2
+2024-01-19 19:02:00,390 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,390 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-19 19:02:00,390 INFO    HandlerThread:21646 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-19 19:02:00,390 DEBUG   SystemMonitor:21646 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-19 19:02:00,390 DEBUG   SystemMonitor:21646 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-19 19:02:00,390 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-19 19:02:00,390 DEBUG   SystemMonitor:21646 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-19 19:02:00,391 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined disk monitor
+2024-01-19 19:02:00,391 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined memory monitor
+2024-01-19 19:02:00,391 INFO    HandlerThread:21646 [interfaces.py:finish():202] Joined network monitor
+2024-01-19 19:02:00,391 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,391 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-19 19:02:00,392 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 3
+2024-01-19 19:02:00,392 DEBUG   SenderThread:21646 [sender.py:send():382] send: stats
+2024-01-19 19:02:00,392 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,392 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-19 19:02:00,392 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,392 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-19 19:02:00,392 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 4
+2024-01-19 19:02:00,392 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,392 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-19 19:02:00,392 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,392 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-19 19:02:00,392 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 5
+2024-01-19 19:02:00,393 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,393 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-19 19:02:00,393 DEBUG   SenderThread:21646 [sender.py:send():382] send: summary
+2024-01-19 19:02:00,393 INFO    SenderThread:21646 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-19 19:02:00,393 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,393 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-19 19:02:00,393 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 6
+2024-01-19 19:02:00,393 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,393 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-19 19:02:00,394 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,394 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-19 19:02:00,396 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:02:00,451 INFO    wandb-upload_0:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/jm8eh0x2-media/table/examples_11_91f6e347e7ecd02507aa.table.json
+2024-01-19 19:02:00,644 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 7
+2024-01-19 19:02:00,644 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:00,644 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-19 19:02:00,644 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:00,644 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-19 19:02:00,652 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:02:00,689 INFO    wandb-upload_2:21646 [upload_job.py:push():89] Uploaded file /home/jithish/.local/share/wandb/artifacts/staging/tmpkwcq1gct
+2024-01-19 19:02:00,845 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:02:00,845 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/config.yaml
+2024-01-19 19:02:00,976 INFO    wandb-upload_3:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/19unftlb-media/table/conf_table_10_53e8eba8db34a3d4f73a.table.json
+2024-01-19 19:02:01,129 INFO    wandb-upload_0:21646 [upload_job.py:push():131] Uploaded file /tmp/tmp467fxau7wandb/giks9s5u-media/table/examples_11_91f6e347e7ecd02507aa.table.json
+2024-01-19 19:02:01,355 INFO    wandb-upload_1:21646 [upload_job.py:push():89] Uploaded file /home/jithish/.local/share/wandb/artifacts/staging/tmpmm7nfcey
+2024-01-19 19:02:01,445 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 8
+2024-01-19 19:02:01,445 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:02:01,446 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:01,446 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-19 19:02:01,448 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:01,448 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-19 19:02:01,448 INFO    SenderThread:21646 [job_builder.py:build():296] Attempting to build job artifact
+2024-01-19 19:02:01,450 INFO    SenderThread:21646 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-01-19 19:02:01,453 INFO    SenderThread:21646 [job_builder.py:build():402] adding wandb-job metadata file
+2024-01-19 19:02:01,460 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 9
+2024-01-19 19:02:01,460 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:01,461 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-19 19:02:01,461 DEBUG   SenderThread:21646 [sender.py:send():382] send: artifact
+2024-01-19 19:02:01,653 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:02:01,846 INFO    Thread-12 :21646 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log
+2024-01-19 19:02:03,817 INFO    wandb-upload_3:21646 [upload_job.py:push():89] Uploaded file /home/jithish/.local/share/wandb/artifacts/staging/tmpanho7xnq
+2024-01-19 19:02:03,825 INFO    wandb-upload_2:21646 [upload_job.py:push():89] Uploaded file /home/jithish/.local/share/wandb/artifacts/staging/tmpxeri8znz
+2024-01-19 19:02:05,350 INFO    SenderThread:21646 [sender.py:send_artifact():1494] sent artifact job-https___github.com_jithsg_MLOps-Project.git_week_2_train.py - {'id': 'QXJ0aWZhY3Q6Njk2NDcwNzEx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMTgwNzUzNQ==', 'latestArtifact': None}}
+2024-01-19 19:02:05,351 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:05,351 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-19 19:02:05,351 INFO    SenderThread:21646 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-19 19:02:05,850 INFO    SenderThread:21646 [dir_watcher.py:finish():388] scan: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files
+2024-01-19 19:02:05,850 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-metadata.json wandb-metadata.json
+2024-01-19 19:02:05,850 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log output.log
+2024-01-19 19:02:05,850 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/config.yaml config.yaml
+2024-01-19 19:02:05,851 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/requirements.txt requirements.txt
+2024-01-19 19:02:05,856 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json wandb-summary.json
+2024-01-19 19:02:05,865 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/conf_table_10_53e8eba8db34a3d4f73a.table.json media/table/conf_table_10_53e8eba8db34a3d4f73a.table.json
+2024-01-19 19:02:05,865 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/examples_1_a5b392a75aaf9b0b8a53.table.json media/table/examples_1_a5b392a75aaf9b0b8a53.table.json
+2024-01-19 19:02:05,865 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/examples_11_91f6e347e7ecd02507aa.table.json media/table/examples_11_91f6e347e7ecd02507aa.table.json
+2024-01-19 19:02:05,865 INFO    SenderThread:21646 [dir_watcher.py:finish():402] scan save: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/media/table/conf_table_0_ab88b7d80cc8abe8cf5b.table.json media/table/conf_table_0_ab88b7d80cc8abe8cf5b.table.json
+2024-01-19 19:02:05,865 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 10
+2024-01-19 19:02:05,865 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:02:05,865 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:05,865 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-19 19:02:05,866 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 19:02:05,866 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:05,866 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-19 19:02:05,866 INFO    SenderThread:21646 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-19 19:02:06,425 INFO    wandb-upload_1:21646 [upload_job.py:push():131] Uploaded file /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/output.log
+2024-01-19 19:02:06,429 INFO    wandb-upload_0:21646 [upload_job.py:push():131] Uploaded file /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/wandb-summary.json
+2024-01-19 19:02:06,459 INFO    wandb-upload_2:21646 [upload_job.py:push():131] Uploaded file /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/requirements.txt
+2024-01-19 19:02:06,508 INFO    wandb-upload_3:21646 [upload_job.py:push():131] Uploaded file /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/files/config.yaml
+2024-01-19 19:02:06,656 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-19 19:02:06,657 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:02:06,658 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:02:06,709 INFO    Thread-11 (_thread_body):21646 [sender.py:transition_state():617] send defer: 11
+2024-01-19 19:02:06,709 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:06,709 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-19 19:02:06,710 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:06,710 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-19 19:02:06,710 INFO    SenderThread:21646 [file_pusher.py:join():181] waiting for file pusher
+2024-01-19 19:02:06,710 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 12
+2024-01-19 19:02:06,711 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:06,711 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-19 19:02:06,711 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:06,711 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-19 19:02:06,711 INFO    SenderThread:21646 [file_stream.py:finish():595] file stream finish called
+2024-01-19 19:02:06,962 INFO    SenderThread:21646 [file_stream.py:finish():599] file stream finish is done
+2024-01-19 19:02:06,962 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 13
+2024-01-19 19:02:06,962 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:06,962 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-19 19:02:06,963 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:06,963 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-19 19:02:06,963 INFO    SenderThread:21646 [sender.py:transition_state():617] send defer: 14
+2024-01-19 19:02:06,963 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 19:02:06,963 INFO    HandlerThread:21646 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-19 19:02:06,964 DEBUG   SenderThread:21646 [sender.py:send():382] send: final
+2024-01-19 19:02:06,964 DEBUG   SenderThread:21646 [sender.py:send():382] send: footer
+2024-01-19 19:02:06,964 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: defer
+2024-01-19 19:02:06,964 INFO    SenderThread:21646 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-19 19:02:06,966 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 19:02:06,966 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: poll_exit
+2024-01-19 19:02:06,968 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 19:02:06,969 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: server_info
+2024-01-19 19:02:06,969 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: server_info
+2024-01-19 19:02:07,012 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-19 19:02:07,012 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-19 19:02:07,013 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: job_info
+2024-01-19 19:02:07,193 DEBUG   SenderThread:21646 [sender.py:send_request():409] send_request: job_info
+2024-01-19 19:02:07,195 DEBUG   HandlerThread:21646 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-19 19:02:07,196 INFO    HandlerThread:21646 [handler.py:finish():869] shutting down handler
+2024-01-19 19:02:08,014 INFO    WriterThread:21646 [datastore.py:close():296] close: /home/jithish/Documents/mlops_project_0/week_2/outputs/2024-01-19/19-01-37/wandb/run-20240119_190149-dlmsy4o0/run-dlmsy4o0.wandb
+2024-01-19 19:02:08,194 INFO    SenderThread:21646 [sender.py:finish():1572] shutting down sender
+2024-01-19 19:02:08,194 INFO    SenderThread:21646 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-19 19:02:08,194 INFO    SenderThread:21646 [file_pusher.py:join():181] waiting for file pusher
