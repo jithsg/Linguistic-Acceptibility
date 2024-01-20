@@ -1,0 +1,9 @@
+datasets
+pytorch-lightning==1.2.10
+pandas
+hydra-core
+omegaconf
+onnxruntime
+fastapi
+uvicorn
+scipy
