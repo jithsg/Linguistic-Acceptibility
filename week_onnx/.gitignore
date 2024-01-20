@@ -1,0 +1,16 @@
+.env
+# Weights & Biases
+wandb/
+
+# Python bytecode
+__pycache__/
+
+# Output logs
+outputs/
+
+# My MLops checkpoints
+my_mlops/
+
+# Data files
+cifar-10-batches-py/
+cifar-10-python.tar.gz
