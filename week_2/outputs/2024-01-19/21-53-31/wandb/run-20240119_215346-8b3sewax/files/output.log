@@ -1,0 +1,24 @@
+  | Name                   | Type                          | Params
+-------------------------------------------------------------------------
+0 | bert                   | BertForSequenceClassification | 4.4 M
+1 | train_accuracy_metric  | Accuracy                      | 0
+2 | val_accuracy_metric    | Accuracy                      | 0
+3 | f1_metric              | F1                            | 0
+4 | precision_macro_metric | Precision                     | 0
+5 | recall_macro_metric    | Recall                        | 0
+6 | precision_micro_metric | Precision                     | 0
+7 | recall_micro_metric    | Recall                        | 0
+-------------------------------------------------------------------------
+4.4 M     Trainable params
+0         Non-trainable params
+4.4 M     Total params
+17.545    Total estimated model params size (MB)
+/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/utilities/distributed.py:68: UserWarning: The dataloader, val dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  warnings.warn(*args, **kwargs)
+Validation sanity check:  50%|█████████████████████████████████████████████▌                                             | 1/2 [00:00<00:00,  9.29it/s]
+/home/jithish/.cache/pypoetry/virtualenvs/mlops-project-0-LIiUPOOO-py3.11/lib/python3.11/site-packages/pytorch_lightning/utilities/distributed.py:68: UserWarning: The dataloader, train dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 12 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+
+Epoch 0:  97%|▉| 36/37 [00:05<00:00,  6.84it/s, loss=0.629, v_num=ewax, valid/loss_epoch=0.720, valid/acc=0.344, valid/precision_macro=0.484, valid/rec
+
+Validating: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 16.28it/s]

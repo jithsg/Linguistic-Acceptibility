@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.9-slim
+FROM huggingface/transformers-pytorch-cpu:latest
 
 # Set the working directory in the container
 WORKDIR /app
@@ -9,6 +9,9 @@ COPY . /app
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
+
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
