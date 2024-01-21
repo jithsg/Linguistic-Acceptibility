@@ -3,6 +3,7 @@
 # Tools and Technologies:
 - PyTorch Lightining: For model training and checkpoints
 - Weights & Biases (wandb): For experiment tracking and logging
+- DVC: For tracking data
 - Hydra: For configuration management
 - ONNX: Used for model format standardization.
 - Docker: For containerization and environment consistency.
